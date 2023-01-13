@@ -1,0 +1,24 @@
+$primaryColor : rgb(84, 112, 112);
+$secondColor  : rgb(173, 218, 187);
+$tertiaryColor : rgb(199, 191, 191);
+
+body, html{
+    margin :0 auto;
+}
+
+header{
+    background-color: $primaryColor;
+    width: 100%;
+    height: 150px;
+  
+}
+
+main{
+    background-color: $secondColor;
+    height: 100vh;
+}
+
+footer{
+    background-color: $primaryColor;
+    height: 150px;
+}
