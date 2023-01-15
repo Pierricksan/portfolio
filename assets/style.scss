@@ -1,24 +1,9 @@
-$primaryColor : rgb(84, 112, 112);
-$secondColor  : rgb(173, 218, 187);
-$tertiaryColor : rgb(199, 191, 191);
 
-body, html{
-    margin :0 auto;
-}
+@import '../assets/scss/Utils/variables';
+@import '../assets/scss/Base/typographie';
+@import '../assets/scss/Layout/header';
+@import '../assets/scss/Layout/footer';
+@import '../assets/scss/Pages/main';
+@import '../assets/scss/Layout/footer';
 
-header{
-    background-color: $primaryColor;
-    width: 100%;
-    height: 150px;
-  
-}
 
-main{
-    background-color: $secondColor;
-    height: 100vh;
-}
-
-footer{
-    background-color: $primaryColor;
-    height: 150px;
-}

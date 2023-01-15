@@ -1,0 +1,104 @@
+main {
+  width: 90%;
+  margin: 50px auto;
+
+  h2 {
+    margin: 15px;
+    font-size: 2rem;
+    color: $primaryColor;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+  }
+
+  .container-projets {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .card {
+      background-color: white;
+      width: 275px;
+      padding: 10px;
+      margin: 10px 30px;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      transition: 0.3s;
+      img {
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .card_details {
+        min-height: 125px;
+        padding: 16px 8px 8px 8px;
+        .tag {
+          background-color: white;
+          padding: 4px 8px;
+          border: 1px solid #e5eaed;
+          border-radius: 50px;
+          font-size: 12px;
+          font-weight: 600;
+          color: #788697;
+        }
+        .card-title {
+          font-size: 22px;
+          font-weight: 500;
+          margin-top: 14px;
+          text-align: center;
+        }
+        p {
+          font-size: 14px;
+          line-height: 150%;
+        }
+      }
+    }
+    .card:hover,
+    .card:focus {
+      cursor: pointer;
+      background-color: $opacityPrimaryColor;
+      color: white;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .container-identification {
+    width: 100%;
+    .identification-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: solid 1px $primaryColor;
+        object-fit: cover;
+      }
+      .details {
+        width: 50%;
+        padding-right: 80px;
+        line-height: 30px;
+        .details_name {
+          text-align: right;
+        }
+        .details_description {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

@@ -4,29 +4,143 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="./public/style.css" />
     <title>Pierrick Rousselot - Développeur web Javascript</title>
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo"></div>
-        <div class="menu">
-          <ul>
-            <li>Projets</li>
-            <li></li>
-            <li>A propos</li>
-          </ul>
+        <div class="logo">
+          <h1>
+            Pierrick Rousselot <br />
+            Développeur web Javascript
+          </h1>
         </div>
+        <ul class="menu">
+          <li>
+            <a href="#projets">Projets</a>
+          </li>
+          <li>
+            <a href="https://github.com/Pierricksan">GitHub</a>
+          </li>
+          <li>
+            <a href="mailto:rousselot.pierrick@gmail.com">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
-
     <main>
-
-        <section>
-
+      <article id="who">
+        <h2>Qui-suis-je</h2>
+        <section class="container-identification">
+          <div class="identification-card">
+            <img src="./assets/images/avatar.jpg" alt="" />
+            <div class="details">
+              <div class="details_name">Pierrick Rousselot</div>
+              <p class="details_description">
+                Jeune développeur en devenir, je viens de finir une formation
+                chez Openclassrooms <br />
+                Passioné et motivé, à la recherche de nouvelles aventure dans le
+                monde de la programmation <br />
+              </p>
+            </div>
+          </div>
         </section>
-
+      </article>
+      <!-- <article>
+        <section id="skills">
+          <h2>Compétences</h2>
+        </section>
+      </article> -->
+      <article id="projets">
+        <h2>Projet de formations</h2>
+        <section class="container-projets">
+          <a href="">
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/4994765/pexels-photo-4994765.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="card_details">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <div class="card-title">BOOKI</div>
+                <p>Elaboration d'un site de réservation en ligne</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://pierricksan.github.io/projet_3_OPC/">
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/4994765/pexels-photo-4994765.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="card_details">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">SASS</span>
+                <div class="card-title">OH MY FOOD</div>
+                <p>Elaboration d'un site de réservation en ligne</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://pierricksan.github.io/PROJET_4_SEO_EDITED/">
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/4994765/pexels-photo-4994765.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="card_details">
+                <span class="tag">SEO</span>
+                <div class="card-title">AGENCE LA PANTHERE</div>
+                <p>Analyse et optimisation le site de l'agence La Panthère</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://pierricksan.github.io/PROJE_5_JAVASCRIPT/">
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/4994765/pexels-photo-4994765.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="card_details">
+                <span class="tag">JAVASCRIPT</span>
+                <div class="card-title">KANAPE</div>
+                <p>Elaboration d'un site de réservation en ligne</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/Pierricksan/projet_6_bis">
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/4994765/pexels-photo-4994765.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="card_details">
+                <span class="tag">JAVASCRIPT</span>
+                <span class="tag">NODE.JS</span>
+                <span class="tag">EXPRESS.JS</span>
+                <div class="card-title">SAUCE PIIQUANTE</div>
+                <p>Réalisation d'une API avec Node.js et Express.js</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/Pierricksan/PROJET_7_REACT">
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/4994765/pexels-photo-4994765.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="card_details">
+                <span class="tag">REACT.JS</span>
+                <span class="tag">FIGMA</span>
+                <div class="card-title">KASA</div>
+                <p>Elaboration d'un site de réservation en ligne</p>
+              </div>
+            </div>
+          </a>
+        </section>
+      </article>
     </main>
 
     <footer>
