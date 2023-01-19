@@ -62,13 +62,41 @@ header nav .menu li a:hover {
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 992px) {
+  header nav .logo h1 {
+    font-size: 20px;
+  }
+  header nav .menu li {
+    list-style-type: none;
+    padding: 5px;
+    height: 40px;
+    min-width: 80px;
+  }
+  header nav .menu li a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 786px) {
+  header nav .logo h1 {
+    font-size: 16px;
+  }
+  header nav .menu li {
+    list-style-type: none;
+    padding: 5px;
+    height: 40px;
+    min-width: 40px;
+  }
+  header nav .menu li a {
+    font-size: 14px;
+  }
+}
 footer {
   background-color: #3a4c87;
   height: 150px;
 }
 
 main {
-  width: 50%;
+  width: 1200px;
   margin: 50px auto;
 }
 main h2 {
@@ -162,12 +190,44 @@ main .container-identification .identification-card .details {
   line-height: 30px;
 }
 main .container-identification .identification-card .details .details_name {
+  font-weight: 600;
+  font-size: 24px;
+  color: #3a4c87;
   text-align: right;
 }
 main .container-identification .identification-card .details .details_description {
   text-align: justify;
 }
 
+@media screen and (max-width: 1280px) {
+  main {
+    width: 90%;
+  }
+  main .container-projets {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 786px) {
+  main .container-identification {
+    width: 350px;
+  }
+  main .container-identification .identification-card {
+    flex-direction: column;
+  }
+  main .container-identification .identification-card .img {
+    width: 100px;
+    height: 100px;
+  }
+  main .container-identification .identification-card .details {
+    width: 100%;
+    padding-right: 0px;
+    padding-top: 20px;
+  }
+  main .container-identification .identification-card .details .details_name,
+  main .container-identification .identification-card .details .details_description {
+    text-align: center;
+  }
+}
 footer {
   background-color: #3a4c87;
   height: 150px;

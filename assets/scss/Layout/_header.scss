@@ -5,7 +5,7 @@ header {
   display: flex;
   justify-content: center;
   position: relative;
-  top:0px;
+  top: 0px;
   align-items: center;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.46);
   z-index: 1;
@@ -46,6 +46,54 @@ header {
           color: $secondColor;
           border-bottom: $secondColor;
           transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  header {
+    nav {
+      .logo {
+        h1 {
+          font-size: 20px;
+        }
+      }
+      .menu {
+        li {
+          list-style-type: none;
+          padding: 5px;
+          height: 40px;
+          min-width: 80px;
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 786px) {
+  header {
+    nav {
+      .logo {
+        h1 {
+          font-size: 16px;
+        }
+      }
+      .menu {
+        li {
+          list-style-type: none;
+          padding: 5px;
+          height: 40px;
+          min-width: 40px;
+          a {
+            font-size: 14px;
+          }
         }
       }
     }

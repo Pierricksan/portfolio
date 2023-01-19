@@ -1,5 +1,5 @@
 main {
-  width: 50%;
+  width: 1200px;
   margin: 50px auto;
 
   h2 {
@@ -93,10 +93,46 @@ main {
         padding-right: 80px;
         line-height: 30px;
         .details_name {
+          font-weight: 600;
+          font-size: 24px;
+          color: $primaryColor;
           text-align: right;
         }
         .details_description {
           text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    width: 90%;
+    .container-projets{
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 786px) {
+  main {
+    .container-identification {
+     width: 350px;
+      .identification-card {
+        flex-direction: column;
+        .img {
+          width: 100px;
+          height: 100px;
+        }
+        .details {
+          width: 100%;
+          padding-right: 0px;
+          padding-top: 20px;
+          .details_name,
+          .details_description {
+            text-align: center;
+          }
         }
       }
     }
